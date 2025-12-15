@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Montserrat:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body{
+    background-color: #dfdfdb;
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    border-radius: 30px;
+    height: 40px;
+    width: 250px; 
+    color: rgb(124, 124, 124);
+    background: radial-gradient( #ffffff 5%, #b4b4b4 );
+    box-shadow: 0 0 15px rgba(0, 217, 255, 0.418), 0 10px 15px rgba(0, 0, 0, 0.247);
+
+    transition: 0.5s ease-in-out;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+
+    cursor: url(https://www.rw-designer.com/cursor-view/23179.png), pointer;
+}
+
+.bouton{
+    align-self: center;
+    height: 80px;
+    width: 250px;
+    border-radius: 25px;
+    color: rgb(124, 124, 124);
+    background: radial-gradient(#b4b4b4 5%, #ffffff );
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.418), 0 10px 15px rgba(0, 0, 0, 0.247);
+    transition: 0.5s ease-in-out;
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.sparkles{
+    position: absolute;
+    transform: scale(.2);
+    mix-blend-mode: lighten;
+    z-index: -1;
+    transition: 0.3s ease-out;
+}
+
+.bouton:hover .sparkles{
+    mix-blend-mode: lighten;
+    transform: rotate(90deg);
+    transform: scale(.5);
+    opacity: 0%;
+}
+
+.bouton::after{
+    content: '';
+    position: absolute;
+    
+    
+    background: radial-gradient(#00aeff 35%, #ffffff );
+    z-index: -1;
+
+    border-radius: 25px;
+    width: 110%;
+    height: 130%;    
+}
+
+/*background: radial-gradient(#ffffff 15%, #acacac );*/
+
+.bouton:hover{
+    color: #ffffff;
+    transform: scale(1.15);
+    box-shadow: 0 0 100px rgba(0, 217, 255, 0.795);
+}
+
+a:hover{
+    color: #00aeff;
+     transform: scale(1.15);
+}
+
+
+nav{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: absolute;
+
+    height: 75px;
+    width: 1000px;
+    border-radius: 50px;
+    gap: 1em;
+    padding: 1em;
+    top: 35px;
+
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.247);
+
+    cursor: url(https://www.rw-designer.com/cursor-view/23179.png), pointer;
+}
+

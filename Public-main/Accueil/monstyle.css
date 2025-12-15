@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@444&family=Lekton:wght@700&family=Prosto+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+ .container{
+    height: 1000px;
+    background-image: url("https://media.discordapp.net/attachments/1448026927154725005/1448778553620566181/Frutiger.png?ex=693c7fac&is=693b2e2c&hm=b1c711ec44749d3ff7e893be9cc1bdaf47aa65337239b736f722518ccefea287&=&format=webp&quality=lossless&width=1320&height=968");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+ }
+
+ .overlay{
+    mix-blend-mode: lighten;
+    position: absolute;
+    bottom: 0%;
+    left: 15%;
+    scale: calc(3);
+    animation: vent 10s ease-in-out 0s infinite alternate-reverse;
+ }
+
+.Titre{
+    font-family:"Prosto One";
+    font-size: 500%;
+    color: azure;
+}
+.corps{
+    font-family:"Funnel Display";
+    color: azure;
+    font-size: 120%;
+    transform: translate(0%,-15px);
+}
+
+.bouton {
+    height: 80%;
+    position: fixed;
+    bottom: -10px;
+    cursor: url(https://www.rw-designer.com/cursor-view/23165.png), pointer;
+    transform-origin: bottom;
+    z-index: 2;
+    animation: vent 5s ease-in-out 0s infinite alternate-reverse ; 
+}
+
+
+@keyframes vent{
+   from{
+      transform: rotate(-5deg);
+   }
+   to{
+      transform: rotate(5deg);
+   }
+}
+.card {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px; 
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
