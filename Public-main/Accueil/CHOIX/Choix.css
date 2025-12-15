@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@444&family=Lekton:wght@700&family=Prosto+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url("https://parispeaceforum.org/app/uploads/2023/09/net-zero-space-initiative-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg2{
+    background-image: url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3797460/1e361f6ed83dc2b821eabb63d04bf3c0d7b06fe5/ss_1e361f6ed83dc2b821eabb63d04bf3c0d7b06fe5.1920x1080.jpg?t=1762313730");
+    background-size: cover;
+    background-position: center;
+}
+.bg3{
+    background-image: url("https://www.fineartcanvas.com/cdn/shop/products/0180999_5801d5af-6a56-49cc-bb90-a910adf79574.jpg?v=1750198553&width=1240");
+    background-size: cover;
+    background-position: center;
+}
+.bg4{
+    background-image: url("https://scontent.fcdg4-1.fna.fbcdn.net/v/t39.30808-6/498568603_10014059511980135_1985591309750417565_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=5_3Uth4Fd-YQ7kNvwEEY53R&_nc_oc=Adl0jwNn6dSHtp_0MHyT-vYGaWsxB8w7oRLrF4AeBFx5i0-o5vgcCvYUjBg32n_TMJ7iTzizby2e5JvBPksCalPc&_nc_zt=23&_nc_ht=scontent.fcdg4-1.fna&_nc_gid=-dV7TyaLhBTdgfUvpUG62g&oh=00_Afle7Yweew9sMa35-R8lfhRtSVgWiTEFJsAkEeC3PHQKJA&oe=69455D0B");
+    background-size: cover;
+    background-position: center;
+}
+.bg5{
+    background-image: url("https://cdn.wallpaperhub.app/cloudcache/9/8/1/e/8/e/981e8e91f90c93bf5e715527e1922724645f1214.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg6{
+    background-image: url("https://cdn.mos.cms.futurecdn.net/avbK7Yb8hm3wzeTY3hBjyj.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.bg7{
+    background-image: url("https://images4.alphacoders.com/123/1235620.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+a{
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    color: white;
+    filter: drop-shadow(-8px -10px 46px #6b6b6b);
+    backdrop-filter: brightness(1.1) blur(5px);
+    font-weight: 600%;
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    
+    transition: all 0.3s ease;
+    
+    cursor: url(https://www.rw-designer.com/cursor-view/23179.png), pointer;
+}
+
+a::after{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 1px 1px 15px 1px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+a:hover {
+    z-index: 0;
+    transform: translateY(-5px);
+    box-shadow: 40px 0 100px rgba(0, 153, 255, 0.4), -40px 0 100px rgba(2, 255, 56, 0.4);
+}
+
+
+.container{
+    height: 930px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+p{  
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    text-align: center;
+    transform: translate(0px, 150px);
+    color: #ffffff;
+    position: relative;
+
+
+    font-family:"Funnel Display";
+}
+
+p::after{
+    content: '';
+
+    background-color: black;
+    width: 800px;
+    height: 50px;
+    border-radius: 50%;
+    filter: blur(35px);
+    position: absolute;
+    z-index: -1;
+}
+
+h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family:"Funnel Display";
+    color: white;
+    width: 200px;
+    z-index: 2;
+}
